@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+    <link rel="stylesheet" href="assets/css/background.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Prodigy - Razor</title>
+  </head>
+  <body class="body">
+    <!--fix mobile padding top-->
+    <div id="topo" class=""></div>
+    <!--fix mobile padding top-->
+
+    <!--nav-->
+    <nav class="navbar navbar-dark bg-dark fixed-top" id="menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/img/razor_logo.png" alt="logotipo" class="d-inline-block align-text-top logo">
+          </a>
+          <ul>
+            <li>
+              <a class="fw-bold nav-btn" href="#produto">Produto</a>
+            </li>
+            <li>
+              <a class="fw-bold nav-btn" href="#cpu">Especs</a>
+            </li>
+            <li>
+              <a class="fw-bold nav-btn" href="#about">Sobre</a>
+            </li>
+            <li>
+              <a class="fw-bold nav-btn" href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contato</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+      <!--nav-->
+
+    <main id="main">
+
+      <!-- carrosel -->
+    <div class="hide-mob">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/c1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- carrosel -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="featurette-heading fw-normal lh-1 upper title-hr" id="staticBackdropLabel">Contato</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label" >Nome</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Ex: Fernando Posser">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">E-Mail</label>
+                <input type="email" class="form-control" id="email" placeholder="email@domain.com">
+                <div id="emailHelp" class="form-text">Digite seu melhor e-mail!</div>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Telefone</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Ex: +55 (51) 9999-9999">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="Check">
+                <label class="form-check-label" for="Check" >Aceito receber novidades por e-mail</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-outline-primary">Solicitar Orçamento</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->   
+
+    <div class="container-fluid justify-content-center">
+
+        <!-- section prodigy -->
+        <section id="prodigy" class="margin-inicio" data-aos="fade-down" delay="200ms">
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h1 class="featurette-heading fw-normal fw-bold lh-1 title" id="prodigy-title">Prodigy</h1>
+              <h2 class="featurette-heading fw-normal fw-bold lh-1 sub-title">Dê o Melhor</h2>
+              <p class="lead">Máquina para uso em computação gráfica, renderização profissional, simulações em realtime, análises complexas de dados e softwares de alta exigência.</p>
+            </div>
+            <div class="col-md-5">
+              <img src="assets/img/img4.png" alt="Prodigy" class="mob">
+            </div>
+          </div>
+        </section>
+        <!-- section prodigy -->
+
+        <hr class="featurette-divider">
+
+        <!-- section cpu-->
+        <section id="cpu" class="" data-aos="fade-down" delay="200ms">
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h1 class="featurette-heading fw-normal lh-1 upper title-hr">Processador</h1>
+              <p class="lead">Conquiste mais desempenho em seus projetos com um processador Intel® Core™ i5 de 12ª geração. São 10 Núcleos e 16 Threads, 3.7GHz - turbo até 4.9GHz - e cache de 20MB, ideal para quem busca mais performance no dia-a-dia.</p>
+            </div>
+            <div class="col-md-5">
+              <img src="assets/img/cpu.png" alt="Processador" class="mob">
+            </div>
+          </div>
+        </section>
+        <!-- section cpu -->
+
+        <hr class="featurette-divider">
+
+        <!-- section gpu -->
+        <section id="gpu" class="" data-aos="fade-down" delay="200ms">
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h1 class="featurette-heading fw-normal lh-1 upper title-hr">RTX 3090</h1>
+              <p class="lead">As placas de vídeo GeForce RTX™ Série 30 oferecem máximo desempenho para gamers e criadores. Elas contam com a tecnologia Ampere—a 2ª geração da arquitetura RTX da NVIDIA— com novos RT Cores, Tensor Cores e multiprocessadores de streaming para oferecer os gráficos com Ray Tracing mais realistas e recursos de AI de ponta.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img src="assets/img/gpu.png" alt="GPU" class="mob">
+            </div>
+          </div>
+        </section>
+        <!-- section gpu -->
+
+        <hr class="featurette-divider">
+
+        <!-- section specs -->
+        <section id="specs" class="anime">
+          <div class="row featurette text-center">
+            <h1 class="featurette-heading fw-normal lh-1 upper spec">especificações</h1>
+            <div class="col">
+              <button class="list-itens">Processador</button>
+              <button class="list-itens">Placa de Video</button>
+              <button class="list-itens">SSD</button>
+              <button class="list-itens">Memoria RAM</button>
+            </div>
+      </div>
+      <div class="hide-div">
+        <img src="assets/img/cpu.png" alt="Imagem Processador">
+        <h1 class="parts-title">Intel® Core™ i5-12600KF</h1>
+        <p class="lead">
+          <ol class="lista fw-bold">
+            <li>Threads: 16</li>
+            <li>Nucleos: 10</li>
+            <li>Frequencia: 3.7GHz - até 4.9GHz</li>
+            <li>Cache: 20MB</li>
+          </ol>
+        </p>
+      </div>
+      <div class="hide-div">
+        <img src="assets/img/gpu.png" alt="Imagem GPU">
+        <h1 class="parts-title mob-txt">Geforce™ RTX 3060</h1>
+        <p class="lead">
+          <ol class="lista fw-bold">
+            <li>Nvidia® Geforce™ RTX 3060 12GB</li>
+            <li>Cuda cores: 3584 cuda cores</li>
+            <li>Tipo de memoria: GDDR6X</li>
+            <li>Memoria: 4GB até 12GB</li>
+          </ol>
+        </p>
+      </div>
+      <div class="hide-div">
+        <img src="assets/img/ssd.png" alt="Imagem SSD">
+        <h1 class="parts-title">SSD M.2 PCIe X4 NVMe</h1>
+        <p class="lead">
+          <ol class="lista fw-bold">
+            <li>Velocidade de leitura: Até 1700 MB/s</li>
+            <li>Velocidade de gravação: Até 1100 MB/s</li>
+            <li>Temperatura: -40 ° C a 85 ° C</li>
+            <li>Dimensões: 80 x 22 x 2,3 mm</li>
+          </ol>
+        </p>
+      </div>
+      <div class="hide-div">
+        <img src="assets/img/ram.png" alt="Imagem ram">
+        <h1 class="parts-title">DDR4 3200MHz 16GB</h1>
+        <p class="lead">
+          <ol class="lista fw-bold">
+            <li>16GB DDR4 3200MHz NON-ECC (1x16GB)</li>
+            <li>32GB DDR4 3200MHz NON-ECC (2x16GB)</li>
+            <li>64GB DDR4 3200MHz NON-ECC (4x16GB)</li>
+            <li>Dimensões: </li>
+          </ol>
+        </p>
+      </div>
+    </section>
+    <!-- section specs -->
+
+    <hr class="featurette-divider">
+
+    <!-- section produto -->
+    <section id="produto" class="anime">
+      <div class="row featurette">
+        <div class="col">
+          <img src="assets/img/home-gabinete-img-removebg-preview.png" alt="Prodigy" class="gabinete mob">
+        </div>
+      </div>
+      <div class="row featurette anime">
+        <hr class="featurette-divider">
+          <div class="col-md-7 order-md-2">
+            <h1 class="featurette-heading fw-normal lh-1 upper title-hr">o melhor</h1>
+            <p class="lead">
+            <strong>Menos RGB, mais performance.</strong>
+            <br>As nossas máquinas não lembram um pisca-pisca de Natal ou raladores de cozinha.
+            <br>Workstation Pro é lindo como todo computador tem que ser, discreto, com um design industrial e preparado para trabalhar.
+            </p>
+          </div>
+        <div class="col-md-5 order-md-2">
+          <img src="assets/img/pc-yuri.png" alt="Prodigy" class="gabinete mob">
+        </div>
+      </div>
+      <div class="row featurette anime">
+        <hr class="featurette-divider">
+          <div class="col-md-7 order-md-2">
+            <h1 class="featurette-heading fw-normal lh-1 upper title-hr">um pouco mais</h1>
+            <p class="lead">Preparado para o futuro! Desenvolvido especialmente para quem busca alta performance para o trabalho, o Workstation Razor Prodigy é robusto, seguro e expansível. Uma Workstation potente para aumentar a sua produtividade e o seu desempenho no dia a dia.</p>
+          </div>
+        <div class="col-md-5 order-md-1">
+          <img src="assets/img/img2.png" alt="Prodigy" class="gabinete mob">
+        </div>
+      </div>
+    </section>
+    <!-- section produto -->
+
+  </div> <!-- close container -->
+
+  <!-- Button back to top -->
+  <button id="back-to-top" class="btp ">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#2771e0" class="bi bi-arrow-90deg-up" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708l-4-4z"/>
+    </svg>
+  </button>
+  <!-- Button back to top -->
+
+<!-- section about-->
+<section id="about" class="margin-footer">
+  <footer class="text-center text-lg-start bg-dark text-muted">
+    <hr class="cor">
+      <div class="container text-center text-md-start mt-5">
+        <hr class="cor">
+        <div class="row">
+          <div class="col col-xl-3">
+            <h6 class="text-uppercase fw-bold mb-4">Projeto #TeuFuturo</h6>
+            <p>Um Projeto Landingpage patrocinado por #TeuFuturo e Razor</p>
+          </div>
+          <div class="col">
+            <h6 class="text-uppercase fw-bold mb-4 ">Equipe</h6>
+            <p>
+              <a href="https://www.linkedin.com/in/yuriglds/" class="text-reset">Yuri</a>
+            </p>
+            <p>
+              <a href="https://www.linkedin.com/in/gabrielsimor/" class="text-reset">Gabriel</a>
+            </p>
+            <p>
+              <a href="https://www.linkedin.com/in/clarissa-hermany-schmidt-296583222/" class="text-reset">Clarissa</a>
+            </p>
+            <p>
+              <a href="https://www.linkedin.com/in/rodrigo-gon%C3%A7alves-mendes-251948249/" class="text-reset">Rodrigo</a>
+            </p>
+            <p>
+              <a href="https://www.linkedin.com/in/lucasmarquesduarte/" class="text-reset">Lucas</a>
+            </p>
+          </div>
+          <div class="col">
+            <h6 class="text-uppercase fw-bold mb-4">
+              Links
+            </h6>
+            <p class="footer-hover">
+              <a href="#produto" class="text-reset">Produto</a>
+            </p>
+            <p class="footer-hover">
+              <a href="#specs" class="text-reset">Especificações</a>
+            </p>
+            <p class="footer-hover">
+              <a href="#about" class="text-reset">Sobre</a>
+            </p>
+            <p class="footer-hover">
+              <a class="text-reset" href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contato</a>
+            </p>
+          </div>
+          <div class="col">
+            <h6 class="text-uppercase fw-bold mb-4">Razor</h6>
+            <p>Rua Dr. Plínio Moura, 153C<br>Vila Planaltina - 99062-340<br>Passo Fundo/RS</p>
+            <p><a href="https://workstation.razor.com.br/" class="text-reset">Razor</a></p>
+          </div>
+        </div>
+      </div>
+  <hr class="cor">
+  <div class="text-center p-4">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="">Squad 13 - Stranger Strings</a>
+  </div>
+</footer>
+</section>
+<!-- section about-->
+
+<!-- Javascript-->
+<script>
+  AOS.init();
+</script>
+
+<script src="assets/js/animation.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="assets/js/hide-div.js"></script> 
+<!-- Javascript-->
+
+</main>  <!-- close main-->
+
+</body>
+</html>
