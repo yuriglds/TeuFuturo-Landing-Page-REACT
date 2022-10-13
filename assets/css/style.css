@@ -1,27 +1,91 @@
 #prodigy {
-    background-color: white;
+    
+    height: 80vh;
 }
 
 #cpu {
-    background-color: red;
+
+    height: 80vh;
+}
+
+.animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+    -webkit-animation: none;
+    animation: none;
 }
 
 #gpu {
-    background-color: #2771e0;
+    height: 80vh;
 }
 
 #specs {
-    background-color: rgb(0, 255, 34);
+   
+    height: 80vh;
 }
 
-#produto {
-    background-color: yellow;
+.rainbow-bg{
+    animation: rainbow-bg 2.5s linear;
+    animation-iteration-count: infinite;
 }
 
+@keyframes rainbow-bg{
+    100%,0%{
+        background-color: rgb(255,0,0);
+    }
+    8%{
+        background-color: rgb(255,127,0);
+    }
+    16%{
+        background-color: rgb(255,255,0);
+    }
+    25%{
+        background-color: rgb(127,255,0);
+    }
+    33%{
+        background-color: rgb(0,255,0);
+    }
+    41%{
+        background-color: rgb(0,255,127);
+    }
+    50%{
+        background-color: rgb(0,255,255);
+    }
+    58%{
+        background-color: rgb(0,127,255);
+    }
+    66%{
+        background-color: rgb(0,0,255);
+    }
+    75%{
+        background-color: rgb(127,0,255);
+    }
+    83%{
+        background-color: rgb(255,0,255);
+    }
+    91%{
+        background-color: rgb(255,0,127);
+    }
+}
+
+
+#circulo {
+    width: 100%;
+    height: 100%;
+
+    background-color: black;
+    z-index: 1;
+    }
 
 ::-webkit-scrollbar {
     display: none;
 }
+
+.linha {
+    background-color: #7116F2;
+    width: 100%;
+    height: 35px;
+}
+
 .logo {
     width: 50%;
 }
@@ -56,6 +120,7 @@ ul > li {
     margin-top: 50px;
 }
 
+
 .title-hr {
     color: #7116F2;
     border-bottom: 1px solid #7116F2;
@@ -86,18 +151,13 @@ svg:hover {
     text-transform: uppercase;
     font-size: 150px;
     color: white;
-    background: -webkit-linear-gradient(#000000, #2771e0,rgb(253, 253, 253));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    
 }
 
 .sub-title {
     text-transform: uppercase;
     font-size: 75px;
     color: white;
-    background: -webkit-linear-gradient(#ffffff, #2771e0,#000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 p {

@@ -1,3 +1,7 @@
 body {
-  background-image: url(../img/background.png);
+  background-image: url(../img/teste3.png);
+  background-color: rgba(64, 118, 182, 1);
+
+  background-size: auto;
+  background-attachment: fixed;
 }
