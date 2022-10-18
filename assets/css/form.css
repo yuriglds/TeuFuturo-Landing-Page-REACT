@@ -1,11 +1,9 @@
 label {
-    color: black;
+    color: white;
 }
 
 form {
     color: white;
-    background-color: rgb(255, 255, 255, 0.8);
-    border-radius: 25px;
     padding: 5px;
 
 }
