@@ -125,6 +125,13 @@ nav {
   text-transform: uppercase;
 }
 
+.call-action {
+  color: #2771e0;
+  text-decoration: none;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
 .nav-btn:hover {
   color: white;
   border-bottom: 5px solid rgb(39, 113, 224);
