@@ -37,8 +37,20 @@
   height: 80vh;
 }
 
+#comprar {
+  text-decoration: none;
+}
+
+#comprar:hover {
+  color: white;
+}
+
 #specs {
   height: 80vh;
+}
+
+#produto {
+  margin-top: 20vh;
 }
 
 .rainbow-bg {
@@ -143,9 +155,8 @@ ul > li {
   display: inline-block;
 }
 
-#prodigy-title {
-  margin-top: 50px;
 
+#prodigy-title {
   background-image: url('/assets/img/degradee.gif');
   background-clip: text;
   -webkit-background-clip: text;
@@ -171,6 +182,8 @@ ul > li {
     background-position-y: 100%;
   }
 }
+
+
 
 .title-hr {
   color: #7116f2;
@@ -371,7 +384,6 @@ span {
 
 @media (max-width: 375px) {
   .hide-div {
-    margin-top: -5em;
     height: 20em;
   }
   .button {
@@ -425,12 +437,13 @@ span {
 @media (max-width: 1280px) {
   .title {
     text-transform: uppercase;
-    font-size: 80px;
+    margin-top: 40px;
+    font-size: 70px;
     color: white;
   }
   .sub-title {
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
   }
 }
