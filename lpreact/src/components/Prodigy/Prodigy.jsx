@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import '../../assets/Style.css';
 class Prodigy extends Component {
     render() { 
         return (
@@ -12,7 +12,7 @@ class Prodigy extends Component {
               <button type="button" className="btn btn-outline-primary align-middle"><a id="comprar" href="https://razor.com.br/produto/prodigy-xp-528g89/">Comprar</a></button>
             </div>
             <div className="col-md-5" data-aos="fade-up"  data-aos-anchor-placement="top-center" data-aos-duration="1000">
-              <img src="assets/img/img4.png" alt="Processador" className="mob"/>
+              <img src={require('../../assets/img/img4.png')} alt="Prodigy" className="mob"/>
             </div>
           </div>
           </div>

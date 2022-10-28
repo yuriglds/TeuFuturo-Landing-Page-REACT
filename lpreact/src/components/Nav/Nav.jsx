@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../../assets/Style.css';
 
 class Nav extends Component {
     render() { 
@@ -6,7 +7,7 @@ class Nav extends Component {
             <nav className="navbar navbar-dark bg-dark fixed-top" id="menu">
             <div className="container-fluid">
               <a className="navbar-brand" href="index.html">
-                <img src="assets/img/razor_logo.png" alt="logotipo" className="d-inline-block align-text-top logo"/>
+                <img src={require('../../assets/img/razor_logo.png')} alt="logotipo" className="d-inline-block align-text-top logo"/>
               </a>
               <ul>
                 <li>

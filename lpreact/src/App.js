@@ -8,10 +8,26 @@ import Produto from "./components/Produto/Produto";
 import Prodigy from "./components/Prodigy";
 import Cpu from "./components/Cpu";
 import Gpu from "./components/Gpu";
+import Contato from "./components/Contato/Contato";
+import "./assets/Style.css";
+import "./assets/background.css";
+import "./assets/form.css";
 
 function App() {
   return (
     <div className="App">
+      <div id="topo" class=""></div>
+
+      <section id="nav">
+      <Nav/>
+      </section>
+
+
+      <section id="video">
+      <Video/>
+      </section>
+
+          <div class="container container-main justify-content-center">
       <link
         href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
         rel="stylesheet"
@@ -41,14 +57,7 @@ function App() {
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
         crossorigin="anonymous"
       />
-      <section id="nav">
-      <Nav/>
-      </section>
-
-      <section id="video">
-      <Video/>
-      </section>
-
+      
       <section id="prodigy">
       <Prodigy/>
       </section>
@@ -69,6 +78,11 @@ function App() {
       <Produto/>
       </section>
 
+      <section id="contato">
+      <Contato/>
+      </section>
+
+      </div>
       <section id="about">
         <About />
       </section>

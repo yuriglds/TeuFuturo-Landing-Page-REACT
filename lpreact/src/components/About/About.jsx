@@ -1,6 +1,5 @@
-
 import React, { Component } from 'react';
-
+import '../../assets/Style.css';
 class About extends Component {
     render() { 
         return (
