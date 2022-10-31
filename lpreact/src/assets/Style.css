@@ -53,6 +53,7 @@
   margin-top: 20vh;
 }
 
+
 .rainbow-bg {
   animation: rainbow-bg 2.5s linear;
   animation-iteration-count: infinite;
@@ -154,7 +155,6 @@ ul > li {
   display: inline-block;
 }
 
-
 .title-hr {
   color: #7116f2;
   border-bottom: 1px solid #7116f2;
@@ -176,12 +176,13 @@ h5 {
   text-decoration: none;
 }
 
-svg:hover {
-  fill: #7116f2;
+/* svg:hover { 
+  fill: #2c1b44;
   transition: 0.5s;
-}
+}*/
 
 .title {
+  margin-top: 50px;
   text-transform: uppercase;
   font-size: 150px;
   color: white;
@@ -283,14 +284,15 @@ span {
   transition: 0.5s;
 }
 
-.gabinete {
+.gabinete1 {
+  padding-top: 100em;
   width: 100%;
 }
 
 .hide-div {
   padding-top: 1em;
   margin: 0 auto;
-  display: none;
+
   width: 70%;
   padding-bottom: 5em;
 }
@@ -301,8 +303,8 @@ span {
 
 .hide-div img {
   width: 40%;
-  padding-top: 2em;
-  margin-bottom: 2em;
+  padding-top: 22em;
+  margin-bottom: 20em;
   float: left;
 }
 
@@ -350,6 +352,9 @@ span {
     height: 10%;
     margin-top: 1em;
   }
+  .gabinete1 {
+    margin-top: 20em;
+  }
 }
 
 @media (max-width: 375px) {
@@ -367,15 +372,19 @@ span {
 
 @media (max-width: 360px) {
   .hide-div {
-    margin-top: -5em;
+    margin-top: 3em;
     height: 20em;
   }
+
   .button {
     font-size: 73%;
     vertical-align: top;
     width: 26%;
     height: 10%;
     margin-top: 1em;
+  }
+  .gabinete1 {
+    margin-top: 0em;
   }
 }
 
@@ -407,7 +416,7 @@ span {
 @media (max-width: 1280px) {
   .title {
     text-transform: uppercase;
-    margin-top: 40px;
+    margin-top: 100px;
     font-size: 70px;
     color: white;
   }
