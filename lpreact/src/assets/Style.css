@@ -379,6 +379,19 @@ span {
   }
 }
 
+.fixar {
+  margin-top: 150px;
+}
+
+.qr {
+
+  width: 50%;
+  margin-top: 20px;
+  -webkit-box-shadow: -2px -3px 29px 0px rgba(255,255,255,1);
+  -moz-box-shadow: -2px -3px 29px 0px rgba(255,255,255,1);
+  box-shadow: -2px -3px 29px 0px rgba(255,255,255,1);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;

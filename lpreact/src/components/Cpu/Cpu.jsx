@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import '../../assets/Style.css';
+
 class Cpu extends Component {
+  
     render() { 
         return (
             <div className="container text-center">
@@ -17,5 +19,5 @@ class Cpu extends Component {
         );
     }
 }
- 
+
 export default Cpu;

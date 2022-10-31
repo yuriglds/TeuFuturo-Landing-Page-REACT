@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 import About from "./components/About/About";
 import Nav from "./components/Nav/Nav";
@@ -13,10 +13,21 @@ import "./assets/Style.css";
 import "./assets/background.css";
 import "./assets/form.css";
 
+import Preload from "./components/Preload";
+import Back from "./components/Back";
+
+import './assets/js/hide-div.js';
+
+
+
 function App() {
+
   return (
     <div className="App">
-      <div id="topo" class=""></div>
+     
+      <Preload/>
+
+      <div id="topo" className=""></div>
 
       <section id="nav">
       <Nav/>
@@ -27,7 +38,7 @@ function App() {
       <Video/>
       </section>
 
-          <div class="container container-main justify-content-center">
+          <div className="container container-main justify-content-center">
       <link
         href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
         rel="stylesheet"
@@ -49,45 +60,52 @@ function App() {
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
         integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9"
-        crossorigin="anonymous"
+        crossOrigin="anonymous"
       />
       <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-        crossorigin="anonymous"
+        crossOrigin="anonymous"
       />
-      
-      <section id="prodigy">
+       <script src="assets/js/jquery-3.6.1.min.js"></script>
+      <section id="prodigy" className="margin-inicio" data-aos="fade-down">
       <Prodigy/>
       </section>
-
-      <section id="cpu">
+      <hr className="featurette-divider"></hr>
+      <section id="cpu" data-aos="fade-down">
       <Cpu/>
       </section>
-
-      <section id="gpu">
+      <hr className="featurette-divider"></hr>
+      <section id="gpu" data-aos="fade-down">
       <Gpu/>
       </section>
-
-      <section id="specs">
+      <hr className="featurette-divider"></hr>
+      <section id="specs" data-aos="zoom-in"  data-aos-anchor-placement="top-center" data-aos-duration="1000">
       <Specs/>
       </section>
-
+      {/* <hr className="featurette-divider"></hr> */}
       <section id="produto">
       <Produto/>
       </section>
-
-      <section id="contato">
+      <hr className="featurette-divider"></hr>
+      <section id="contact">
       <Contato/>
       </section>
 
       </div>
+
+     <Back/>
+
       <section id="about">
         <About />
       </section>
+      <script type="text/javascript" src="./assets/js/hide-div.js"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossOrigin="anonymous" referrerPolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossOrigin="anonymous"></script>
+
     </div>
   );
-}
+} 
 
 export default App;
