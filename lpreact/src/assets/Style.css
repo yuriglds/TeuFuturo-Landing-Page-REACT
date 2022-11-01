@@ -334,6 +334,10 @@ span {
   scroll-margin-top: 0.8em;
 }
 
+.tamGabinete {
+  margin-top: 23em;
+}
+
 @media (max-width: 1155px) {
   .div-button button {
     padding-right: 100px;
@@ -344,7 +348,7 @@ span {
     display: block;
     width: 100%;
   }
-  .fixar {
+  .tamGabinete {
     margin-top: 60em;
   }
 }
@@ -365,8 +369,8 @@ span {
     display: block;
     width: 100%;
   }
-  .fixar {
-    margin-top: 60em;
+  .tamGabinete {
+    margin-top: 30em;
   }
 }
 
@@ -385,8 +389,12 @@ span {
     height: 10%;
     margin-top: 1em;
   }
-  .fixar {
+
+  .tamGabinete {
     margin-top: 60em;
+  }
+  .titlee {
+    margin-top: 3em;
   }
 }
 
@@ -410,13 +418,9 @@ span {
     display: block;
     width: 100%;
   }
-  .fixar {
+  .tamGabinete {
     margin-top: 60em;
   }
-}
-
-.fixar {
-  margin-top: 23em;
 }
 
 .qr {
@@ -468,9 +472,7 @@ span {
     display: block;
     width: 100%;
   }
-  .fixar {
-    margin-top: 30em;
-  }
+
   .fontSize {
     font-size: 15px;
   }

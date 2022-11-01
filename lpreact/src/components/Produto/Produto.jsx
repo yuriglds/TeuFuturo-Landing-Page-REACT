@@ -6,7 +6,7 @@ class Produto extends Component {
             <div className="container text-center">
       <div className="row featurette">
         <div className="col">
-          <img src={require("../../assets/img/home-gabinete-img-removebg-preview.png")} alt="Prodigy" className="gabinete mob fixar"  data-aos="fade-up"  data-aos-anchor-placement="top-center" data-aos-duration="1000"/>
+          <img src={require("../../assets/img/home-gabinete-img-removebg-preview.png")} alt="Prodigy" className="gabinete mob tamGabinete fixar "  data-aos="fade-up"  data-aos-anchor-placement="top-center" data-aos-duration="1000"/>
         </div>
       </div>
       <div className="row featurette">
