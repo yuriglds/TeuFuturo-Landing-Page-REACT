@@ -1,5 +1,5 @@
 .container-main {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
 }
 #prodigy {
@@ -52,7 +52,6 @@
 #produto {
   margin-top: 20vh;
 }
-
 
 .rainbow-bg {
   animation: rainbow-bg 2.5s linear;
@@ -176,10 +175,10 @@ h5 {
   text-decoration: none;
 }
 
-/* svg:hover { 
-  fill: #2c1b44;
+svg:hover {
+  fill: #540cb7;
   transition: 0.5s;
-}*/
+}
 
 .title {
   margin-top: 50px;
@@ -341,6 +340,13 @@ span {
     font-size: 18px;
     width: 10%;
   }
+  .svgs {
+    display: block;
+    width: 100%;
+  }
+  .fixar {
+    margin-top: 60em;
+  }
 }
 
 @media (max-width: 767px) {
@@ -355,11 +361,22 @@ span {
   .gabinete1 {
     margin-top: 20em;
   }
+  .svgs {
+    display: block;
+    width: 100%;
+  }
+  .fixar {
+    margin-top: 60em;
+  }
 }
 
 @media (max-width: 375px) {
-  .hide-div {
+  .espec {
     height: 20em;
+  }
+  .svgs {
+    display: block;
+    width: 100%;
   }
   .button {
     font-size: 75%;
@@ -367,6 +384,9 @@ span {
     width: 26%;
     height: 10%;
     margin-top: 1em;
+  }
+  .fixar {
+    margin-top: 60em;
   }
 }
 
@@ -386,6 +406,25 @@ span {
   .gabinete1 {
     margin-top: 0em;
   }
+  .svgs {
+    display: block;
+    width: 100%;
+  }
+  .fixar {
+    margin-top: 60em;
+  }
+}
+
+.fixar {
+  margin-top: 23em;
+}
+
+.qr {
+  width: 50%;
+  margin-top: 20px;
+  -webkit-box-shadow: -2px -3px 29px 0px rgba(255, 255, 255, 1);
+  -moz-box-shadow: -2px -3px 29px 0px rgba(255, 255, 255, 1);
+  box-shadow: -2px -3px 29px 0px rgba(255, 255, 255, 1);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -424,5 +463,15 @@ span {
     text-transform: uppercase;
     font-size: 30px;
     color: white;
+  }
+  .svgs {
+    display: block;
+    width: 100%;
+  }
+  .fixar {
+    margin-top: 30em;
+  }
+  .fontSize {
+    font-size: 15px;
   }
 }

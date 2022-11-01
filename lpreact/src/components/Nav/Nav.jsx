@@ -20,7 +20,7 @@ class Nav extends Component {
                   <a className="fw-bold nav-btn" href="#about">Sobre</a>
                 </li>
                 <li>
-                  <a className="fw-bold nav-btn" href="#contact">Contato</a> 
+                  <a className="fw-bold nav-btn" href="#contato">Contato</a> 
                 </li>
               </ul>
             </div>
